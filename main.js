@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Partials, EmbedBuilder } = require('discord.js');
 const fs = require('fs');
+const config = require("./config.json");
 
 //#region DJS Setup
 const client = new Client({
@@ -85,4 +86,4 @@ client.on("messageCreate", function(msg) {
   }
 });
 
-client.login('MTA0ODgzMDE0Nzk0NTU3MDM5Ng.GoCkW0.uEuPWDNUa80jLPClkqdgasQVGmjhXBhDl9C678');
+client.login(config.discord_token);
