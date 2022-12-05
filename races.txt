@@ -1,0 +1,107 @@
+Aarokocra
+Aasimar
+Astral Elf
+Autognome
+Bugbear
+centaur
+Changeling
+Custom Lineage
+Deep Gnome
+Dhampir
+Dragonborn (chromatic)
+Dragonborn (metalic)
+Dragonborn (gem)
+Dragonborn (draconblood)
+Dragonborn (ravenite)
+Duergar
+Dwarf (hill)
+Dwarf (Mark of Warding)
+Dwarf (mountain))
+Eladrin
+Elf (drow)
+Elf (high)
+Elf (Mark of Shadow)
+Elf (pallid)
+Elf (wood)
+Fairy
+Firbolg
+Genasi (air)
+Genasi (earth)
+Genasi (fire)
+Genasi (water)
+Giff
+Githyanki
+Githzerai
+Gnome (deep)
+Gnome (forest)
+Gnome (Mark of Scribing)
+Gnome (rock)
+Goblin
+Goliath
+Hadozee
+Half Elf
+Half Elf (aquatic)
+Half Elf (Drow)
+Half Elf (Mark of Detection)
+Half Elf (Mark of Storm)
+Half Elf (moon or sun)
+Half Elf (wood)
+Half Orc
+Half Orc (Mark of Finding)
+Halfling (ghostwise)
+Halfling (lightfoot)
+Halfling (lotusden)
+Halfling (Mark of Healing)
+Halfling (Mark of Hospitality)
+Halfling (stout)
+Harengon
+Hexblood
+Hobgoblin
+Human (base)
+Human (Mark of Finding)
+Human (Mark of Handling)
+Human (Mark of Making)
+Human (Mark of Passage) 
+Human (Mark of Sentinel)
+Human (variant)
+Kalashtar
+Kender
+Kenku
+Kobold
+Leonin
+Lizardfolk
+Loxodon
+Minotaur
+Orc
+Owlin
+Plasmoid
+Reborn
+Satyr
+Sea Elf
+Shadar-Kai
+Shifter (beasthide)
+Shifter (longtooth)
+Shifter (swiftstride)
+Shifter (Wildhunt)
+Simic Hybrid
+Tabaxi
+Thri-kreen
+Tiefling (Asmodeus)
+Tiefling (Baalzebul)
+Tiefling (Dispater)
+Tiefling (Fierdna)
+Tiefling (Glasya)
+Tiefling (Levistus)
+Tiefling (Mammon)
+Tiefling (Mephistopholes)
+Tiefling (Zariel)
+Tiefling (Devil's Tongue)
+Tiefling (Hellfire)
+Tiefling (Infernal Legacy)
+Tiefling (winged)
+Tortle
+Triton
+Vedalken
+Verdan
+Warforged
+Yuan-ti
