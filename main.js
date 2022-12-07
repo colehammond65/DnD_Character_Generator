@@ -14,7 +14,7 @@ client.on('ready', () => {
 });
 
 // Generate a random DnD character
-async function generateCharacter() {
+function generateCharacter() {
   // Create an empty character object
   const character = {};
 
@@ -29,10 +29,10 @@ async function generateCharacter() {
   };
 
   // Read the names, races, classes, and alignments from their respective files
-  const names = await fs.readFile('names.txt', 'utf8').split('\n');
-  const races = await fs.readFile('races.txt', 'utf8').split('\n');
-  const classes = await fs.readFile('classes.txt', 'utf8').split('\n');
-  const alignments = await fs.readFile('alignments.txt', 'utf8').split('\n');
+  const names = fs.readFileSync('names.txt', 'utf8').split('\n');
+  const races = fs.readFileSync('races.txt', 'utf8').split('\n');
+  const classes = fs.readFileSync('classes.txt', 'utf8').split('\n');
+  const alignments = fs.readFileSync('alignments.txt', 'utf8').split('\n');
 
   // Generate a random name, race, class, and alignment
   character.name = names[Math.floor(Math.random() * names.length)];
@@ -50,9 +50,9 @@ async function generateCharacter() {
   character.backstory = "";
 
   // Read the past events, defining moments, and goals from their respective files
-  const pastEvents = await fs.readFile('pastEvents.txt', 'utf8').split('\n');
-  const definingMoments = await fs.readFile('definingMoments.txt', 'utf8').split('\n');
-  const goals = await fs.readFile('goals.txt', 'utf8').split('\n');
+  const pastEvents = fs.readFileSync('pastEvents.txt', 'utf8').split('\n');
+  const definingMoments = fs.readFileSync('definingMoments.txt', 'utf8').split('\n');
+  const goals = fs.readFileSync('goals.txt', 'utf8').split('\n');
 
   // Generate a random past event, defining moment, and goal
   var past = pastEvents[Math.floor(Math.random() * pastEvents.length)];
@@ -65,7 +65,7 @@ async function generateCharacter() {
   goal = removeNewLine(goal);
 
   // Add the past event, defining moment, and goal to the character's backstory
-  character.backstory += ${character.name} ${past}. One defining moment in their past was when they ${definingMoment}. Currently, ${character.name} is ${goal}.;
+  character.backstory += `${character.name} ${past}. One defining moment in their past was when they ${definingMoment}. Currently, ${character.name} is ${goal}.`;
 
 // Return the character
   return character;
@@ -87,14 +87,16 @@ client.on("messageCreate", function(msg) {
 	const characterEmbed = new EmbedBuilder()
 		.setTitle(`${character.name} the ${character.race} ${character.class}`)
 		.setDescription(`${character.name} is a ${character.alignment} character with the following abilities:`)
-		.addField("Strength", character.abilities.strength)
-		.addField("Dexterity", character.abilities.dexterity)
-		.addField("Constitution", character.abilities.constitution)
-		.addField("Intelligence", character.abilities.intelligence)
-		.addField("Wisdom", character.abilities.wisdom)
-		.addField("Charisma", character.abilities.charisma)
-		.addField("Backstory", character.backstory)
-		.setColor(0x9)
+    .addFields(
+      { name: 'Strength', value: character.abilities.strength.toString() },
+      { name: 'Dexterity', value: character.abilities.dexterity.toString() },
+      { name: 'Constitution', value: character.abilities.constitution.toString() },
+      { name: 'Intelligence', value: character.abilities.intelligence.toString() },
+      { name: 'Wisdom', value: character.abilities.wisdom.toString() },
+      { name: 'Charisma', value: character.abilities.charisma.toString() },
+      { name: 'Backstory', value: character.abilities.backstory },
+    )
+		.setColor(0x900000)
 		.setFooter({ text: 'Powered by chocy milk' });
 	
 	// Send the character embed to the channel
