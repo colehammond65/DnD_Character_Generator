@@ -94,7 +94,7 @@ client.on("messageCreate", function(msg) {
       { name: 'Intelligence', value: character.abilities.intelligence.toString() },
       { name: 'Wisdom', value: character.abilities.wisdom.toString() },
       { name: 'Charisma', value: character.abilities.charisma.toString() },
-      { name: 'Backstory', value: character.abilities.backstory },
+      { name: 'Backstory', value: character.backstory },
     )
 		.setColor(0x900000)
 		.setFooter({ text: 'Powered by chocy milk' });
