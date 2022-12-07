@@ -94,7 +94,7 @@ client.on("messageCreate", function(msg) {
 		.addField("Wisdom", character.abilities.wisdom)
 		.addField("Charisma", character.abilities.charisma)
 		.addField("Backstory", character.backstory)
-		.setColor(0x00AE86)
+		.setColor(0x9)
 		.setFooter({ text: 'Powered by chocy milk' });
 	
 	// Send the character embed to the channel
