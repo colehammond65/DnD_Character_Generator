@@ -85,19 +85,17 @@ client.on("messageCreate", function(msg) {
 	
 	// Create the character embed with the generated character's information
 	const characterEmbed = new EmbedBuilder()
-	  .setTitle(`${character.name} the ${character.race} ${character.class}`)
-	  .setDescription(`${character.name} is a ${character.alignment} character with the following abilities:
-	
-		- Strength: ${character.abilities.strength}
-		- Dexterity: ${character.abilities.dexterity}
-		- Constitution: ${character.abilities.constitution}
-		- Intelligence: ${character.abilities.intelligence}
-		- Wisdom: ${character.abilities.wisdom}
-		- Charisma: ${character.abilities.charisma}
-	
-	  ${character.backstory}`)
-	  .setColor(0x00AE86)
-	  .setFooter({ text: 'Powered by chocy milk' });
+		.setTitle(`${character.name} the ${character.race} ${character.class}`)
+		.setDescription(`${character.name} is a ${character.alignment} character with the following abilities:`)
+		.addField("Strength", character.abilities.strength)
+		.addField("Dexterity", character.abilities.dexterity)
+		.addField("Constitution", character.abilities.constitution)
+		.addField("Intelligence", character.abilities.intelligence)
+		.addField("Wisdom", character.abilities.wisdom)
+		.addField("Charisma", character.abilities.charisma)
+		.addField("Backstory", character.backstory)
+		.setColor(0x00AE86)
+		.setFooter({ text: 'Powered by chocy milk' });
 	
 	// Send the character embed to the channel
 	msg.channel.send({ embeds: [characterEmbed] });
