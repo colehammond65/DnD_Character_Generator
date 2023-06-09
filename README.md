@@ -13,15 +13,6 @@ Discord Bot is a discord bot for streamers
 4. Enable 'PRESENCE INTENT', 'SERVER MEMBERS INTENT' and 'MESSAGE CONTENT INTENT'
 5. Click 'Reset Token' and make a note of the token as you can't check it again without reseting it
 
-### Creating a Twitch Application:
-1. Go to the [Twitch Developer Console](https://dev.twitch.tv/console/apps)
-2. Click 'Register Your Application'
-3. Give the application what ever name you want
-4. Set 'OAuth Redirect URLs' to 'http://localhost'
-5. Set 'Category' to 'Application Integration' and click 'Create'
-6. Click 'Manage' on the application you created
-7. Make a note of the 'Client ID' and create a New Secret, make a note of this as well
-
 ### Setting up the bot
 
 #### Docker (Recommended)
