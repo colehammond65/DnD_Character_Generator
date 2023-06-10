@@ -19,13 +19,16 @@ function generateCharacter() {
   const character = {};
 
   // Generate random abilities
+  const min = 3;
+  const max = 18;
+
   character.abilities = {
-    strength: Math.floor(Math.random() * 20) + 1,
-    dexterity: Math.floor(Math.random() * 20) + 1,
-    constitution: Math.floor(Math.random() * 20) + 1,
-    intelligence: Math.floor(Math.random() * 20) + 1,
-    wisdom: Math.floor(Math.random() * 20) + 1,
-    charisma: Math.floor(Math.random() * 20) + 1
+    strength: Math.floor(Math.random() * (max - min + 1)) + min,
+    dexterity: Math.floor(Math.random() * (max - min + 1)) + min,
+    constitution: Math.floor(Math.random() * (max - min + 1)) + min,
+    intelligence: Math.floor(Math.random() * (max - min + 1)) + min,
+    wisdom: Math.floor(Math.random() * (max - min + 1)) + min,
+    charisma: Math.floor(Math.random() * (max - min + 1)) + min
   };
 
   // Read the names, races, classes, and alignments from their respective files
