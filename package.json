@@ -1,6 +1,6 @@
 {
   "name": "DnD_Chracter_Generator",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Discord bot for creating DnD Characters",
   "main": "main.js",
   "repository": {
@@ -10,6 +10,6 @@
   "author": "Cole Hammond",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "discord.js": "^14.12.1"
+    "discord.js": "^14.13.0"
   }
 }
